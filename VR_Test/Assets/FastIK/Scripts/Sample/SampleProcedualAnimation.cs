@@ -24,7 +24,11 @@ using UnityEngine.SceneManagement;
         TargetHandLeft.transform.SetPositionAndRotation(
             InputTracking.GetLocalPosition(XRNode.LeftHand),
             InputTracking.GetLocalRotation(XRNode.LeftHand));
-        }
+
+        TargetHandRight.transform.SetPositionAndRotation(
+           InputTracking.GetLocalPosition(XRNode.RightHand),
+           InputTracking.GetLocalRotation(XRNode.RightHand));
+    }
 
     }
 
